@@ -109,7 +109,7 @@
   height: auto; */
   margin-left: 20%;
   margin-right: 20%;
-  background-color: yellow;
+  background-color: white;
 }
 
 .communityList article {
@@ -123,4 +123,11 @@
   /* background: white;
   border: 1px solid rgb(233, 239, 244); */
 
+}
+
+.communityList td {
+  background-color: white;
+  /* margin-left: 40%; */
+  width: 30%;
+  border: 1px solid rgb(233, 239, 244);
 }

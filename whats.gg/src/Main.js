@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './Main.css';
 import Header from './Components/Layout/Header';
 import Footer from './Components/Layout/Footer';
@@ -6,7 +6,17 @@ import logo from '../src/logo192.png';
 import { Link, BrowserRouter } from 'react-router-dom'
 
 
-function Main(){
+function Main() {
+  // const tbNums = ['1','내용1','2','내용2','3','4','5','6','7','8','9','10'];
+  const [titles, setTitles] = useState([
+    {id: 1, text: "1" },
+    {id: 2, text: "내용1" },
+    {id: 3, text: "2" },
+    {id: 4, text: "내용2" }
+  ]);
+                
+  const tbTitles = titles.map((title) => <td key={title.id}>{title.text}</td>);
+  
     return (
         <>
         <div className="wrapper">
@@ -38,16 +48,21 @@ function Main(){
                 </h4>
               </div>
               <div className="communityList">
-                <article>1</article>
-                <article>2</article>
-                <article>3</article>
-                <article>4</article>
-                <article>5</article>
-                <article>6</article>
-                <article>7</article>
-                <article>8</article>
-                <article>9</article>
-                <article>10</article>
+              <table>
+                  {tbTitles}
+                </table>
+                <table>
+                  {tbTitles}
+                </table>
+                <table>
+                  {tbTitles}
+                </table>
+                <table>
+                  {tbTitles}
+                </table>
+                <table>
+                  {tbTitles}
+                </table>
               </div>
             </div>
           </section>
