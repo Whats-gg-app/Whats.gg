@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
+import Routers from './Components/routes';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    <Routers>
+      <Main />
+    </Routers>
   </React.StrictMode>,
   document.getElementById('root')
 );

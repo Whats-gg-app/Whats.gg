@@ -3,11 +3,13 @@ import './Main.css';
 import Header from './Components/Layout/Header';
 import Footer from './Components/Layout/Footer';
 import logo from '../src/logo192.png';
+import { Link, BrowserRouter } from 'react-router-dom'
+
 
 function Main(){
     return (
         <>
-        <div class="wrapper">
+        <div className="wrapper">
           <Header />
 
           {/* 헤더 밑 CSS */}
@@ -32,7 +34,7 @@ function Main(){
             <div>
               <div className="comunityTitle">
                 <h4>
-                  <a href="#">WHATS.GG Talk 인기글</a>
+                  <a href="duo">WHATS.GG Talk 인기글</a>
                 </h4>
               </div>
               <div className="communityList">

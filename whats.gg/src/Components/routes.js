@@ -1,20 +1,33 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Route, Switch  } from "react-router-dom";
+import Main from "../Main";
+import Duo from "../Containers/Duo";
+import Community from "../Containers/Community";
+import MultiSearch from "../Containers/MultiSearch";
+import { BrowserRouter } from "react-router-dom";
+import Header from "./Layout/Header";
 
-function Routes() {
+function Routers() {
     return (
-        <Switch>
-            <BrowserRouter>
-                <Route />
+        <BrowserRouter>
+        <Header />
+            <Switch>
 
-                <Route />
+                <Route exact path="/" component={Main} />
 
-                <Route />
+                <Route exact path="/duo" component={Duo} />
 
-            </BrowserRouter>
-        </Switch>
+                <Route exact path="/community" component={Community} />
+
+                <Route exact path="/multisearch" component={MultiSearch} />
+
+            </Switch>
+        </BrowserRouter>
+            
         
-    );
+       
+        
+    )
 }
 
-export default Routes;
+export default Routers
