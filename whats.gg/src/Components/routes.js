@@ -1,11 +1,12 @@
 import React from "react";
 import { Route, Switch  } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import Header from "./Layout/Header";
 import Main from "../Main";
 import Duo from "../Containers/Duo";
 import Community from "../Containers/Community";
 import MultiSearch from "../Containers/MultiSearch";
-import { BrowserRouter } from "react-router-dom";
-import Header from "./Layout/Header";
+import Test from "../Containers/Test";
 
 function Routers() {
     return (
@@ -21,6 +22,8 @@ function Routers() {
 
                 <Route exact path="/multisearch" component={MultiSearch} />
 
+                <Route exact path="/test" component={Test} />
+                
             </Switch>
         </BrowserRouter>
             

@@ -14,6 +14,7 @@ const Header = () => {
             <li><a className={styles.menuLink} href='multisearch'>멀티서치</a></li>
             <li><a className={styles.menuLink} href='duo'>듀오</a></li>
             <li><a className={styles.menuLink} href='community'>커뮤니티</a></li>
+            <li><a className={styles.menuLink} href='test'>테스트</a></li>
           </ul>
         </nav>
       </div>
